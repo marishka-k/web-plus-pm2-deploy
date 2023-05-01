@@ -21,10 +21,9 @@ module.exports = {
       user: "kramarvik",
       host: "51.250.13.190",
       ref: "origin/master",
-      repo: "https://github.com/marishka-k/web-plus-pm2-deploy.git",
+      repo: "git@github.com:marishka-k/web-plus-pm2-deploy.git",
       path: "/home/kramarvik/web-plus-pm2-deploy/frontend",
-      "post-deploy":
-        "cd ~/web-plus-pm2-deploy/frontend && npm i && npm run build",
+      "post-deploy": "cd frontend && npm i && npm run build"
     },
   },
 };
